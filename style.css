@@ -1,0 +1,542 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Header Styling */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+header .contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+header .contact span a {
+    color: #66c636;
+    text-decoration: none;
+}
+
+header .contact span a:hover {
+    text-decoration: underline;
+}
+
+header .logos {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logos img {
+    height: 35px;
+    display: block;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 35px;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #66c636;
+    color: black;
+}
+
+nav .highlight {
+    background: #66c636;
+    color: black;
+    border-radius: 5px;
+}
+
+
+/* Background Styling */
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('metro.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+
+
+/* join us  */
+
+form {
+    background-color: #ffffffad;
+    border: 1px solid #cccccc2a;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+    max-width: 600px;
+    margin: 10px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+}
+
+form h2 {
+    text-align: center;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0px;
+    text-align: left;
+    margin-left: 1px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="password"],
+form input[type="file"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 0px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form button {
+    background-color: #297343;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+}
+
+form button:hover {
+    background-color: #297343;
+}
+
+/* sign in */
+
+form {
+    background-color: #ffffffad;
+    border: 1px solid #cccccc2a;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+    max-width: 600px;
+    margin: 10px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+}
+
+form h2 {
+    text-align: center;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0px;
+    text-align: left;
+    margin-left: 1px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 0px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form button {
+    background-color: #297343;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+}
+
+form button:hover {
+    background-color: #297343;
+}
+
+/* Boxes (columns) Styling */
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.map_column,
+.column {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease, box-shadow 0.3s ease;
+}
+
+.column:hover,
+.map_column:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background: #e9f5e9;
+}
+
+.map_column img {
+    height: 600px;
+}
+
+
+h6 {
+    color: #66c636;
+}
+
+p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.column h1 {
+    color: #66c636;
+    text-align: center;
+    font-weight: bold;
+}
+
+.column h3,
+.column h4 {
+    color: #66c636;
+    text-align: center;
+
+}
+
+.column ul li {
+    font-size: 12px;
+    color: #000000;
+    text-decoration: none;
+
+}
+
+.dropdownMenu {
+    position: relative;
+    display: inline-block;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.dropButton {
+    background-color: #66c636;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.dropButton:hover {
+    background-color: #4e9a27;
+}
+
+.dropdownText {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdownText a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdownText a:hover {
+    background-color: #66c636;
+    color: white;
+    border-radius: 5px;
+}
+
+.dropdownMenu:hover .dropdownText {
+    display: block;
+}
+
+
+
+.column img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+table {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background: #66c636;
+    font-weight: bold;
+}
+
+td {
+    color: #333333;
+}
+
+.discount {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+p a {
+    color: #66c636;
+}
+
+.info {
+    list-style: none;
+    padding: 0;
+}
+
+.info li {
+    margin: 10px;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info li strong {
+    color: #66c636;
+}
+
+.info li:hover {
+    transform: scale(1.05);
+    transition: all 0.4s ease;
+}
+
+.info a {
+    color: #66c636;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+
+.message {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px auto;
+    padding: 8px;
+    width: 80%;
+    max-width: 350px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+/* Slideshow Styling */
+.slideshow-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.789);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.214);
+    text-align: center;
+}
+
+.mySlides {
+    display: none;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.mySlides img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.numbertext {
+    font-size: 12px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.text {
+    padding: 15px;
+    text-align: center;
+    color: #333333;
+}
+
+/* Animation */
+.fade {
+    animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Navigation Buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Dots (Indicators) */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #66c636;
+}
+
+
+/* Footer Styling */
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
